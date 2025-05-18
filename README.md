@@ -1,3 +1,5 @@
 Personal React Project :)
 
-Simple Berkeley Trivia
+### Deploys
+Check it out here --> https://keemothy.github.io/Berkeley-Trivia/
+
