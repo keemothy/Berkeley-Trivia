@@ -21,7 +21,7 @@ function Quiz() {
         "Economics",
         "Cellular Biology",
         "Data Science",
-        "Mollecular Cell Biology",
+        "Molecular Cell Biology",
       ],
       answer: "Computer Science",
     },
