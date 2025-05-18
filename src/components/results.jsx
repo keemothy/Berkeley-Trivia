@@ -25,12 +25,18 @@ function Results({ userAnswers, questionBank, restartQuiz }) {
       {score === questionBank.length ? (
         <div>
           <h2>Berkeley Nerd!</h2>
-          <img src="/erm.gif" alt="Full score nerd" />
+          <img
+            src={`${process.env.PUBLIC_URL}/nerd.gif`}
+            alt="Full score nerd"
+          />
         </div>
       ) : (
         <div>
           <h2>Almost There!</h2>
-          <img src="/long-tears.gif" alt="Almost there" />
+          <img
+            src={`${process.env.PUBLIC_URL}/long-tears.gif`}
+            alt="Almost there"
+          />
         </div>
       )}
 
