@@ -17,16 +17,25 @@ function Results({ userAnswers, questionBank, restartQuiz }) {
 
   return (
     <div>
-      <h2> You finished!</h2>
+      <h2>You finished!</h2>
       <p className="score">
-        Your Final Score: {score}/{questionBank.length}
-        <p>
-          {score === questionBank.length ? "Berkeley Nerd!" : "Almost There!"}
-        </p>
+        Your Final Score: {score} / {questionBank.length}
       </p>
+
+      {score === questionBank.length ? (
+        <div>
+          <h2>Berkeley Nerd!</h2>
+          <img src="/erm.gif" alt="Full score nerd" />
+        </div>
+      ) : (
+        <div>
+          <h2>Almost There!</h2>
+          <img src="/long-tears.gif" alt="Almost there" />
+        </div>
+      )}
+
       <button className="restart-button" onClick={restartQuiz}>
-        {" "}
-        Restart Quiz{" "}
+        Restart Quiz
       </button>
     </div>
   );

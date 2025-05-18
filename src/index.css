@@ -3,8 +3,21 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f4f8;
+  background: #000000e2;
   color: #333;
+  background-image: url(../public/berk.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Container styling for the app */
@@ -14,7 +27,7 @@ body {
   justify-content: center;
   max-width: 600px;
   margin: 50px auto;
-  background: #fff;
+  background: #002676;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -25,6 +38,14 @@ h1,
 h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: #FDB515;
+}
+
+p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #FFFFFF;
 }
 
 /* Styling the question text */
@@ -52,8 +73,8 @@ h2 {
 }
 
 .option.selected {
-  background: #90caf9;
-  border: 2px solid #42a5f5;
+  background: #FDB515;
+  border: 2px solid #FDB515;
 }
 
 /* Navigation button styles */
@@ -66,8 +87,8 @@ h2 {
 .nav-buttons button {
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
-  color: white;
+  background: #FDB515;
+  color: rgb(0, 0, 0);
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;
@@ -79,7 +100,7 @@ h2 {
 }
 
 .nav-buttons button:disabled {
-  background: #a0c4e3;
+  background: #ffffff;
   cursor: not-allowed;
 }
 
@@ -89,8 +110,8 @@ h2 {
   margin: 20px auto;
   padding: 10px 20px;
   border: none;
-  background: #42a5f5;
-  color: white;
+  background: #FDB515;
+  color: rgb(0, 0, 0);
   border-radius: 6px;
   cursor: pointer;
   font-size: 1em;

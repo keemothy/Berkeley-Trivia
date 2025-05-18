@@ -108,7 +108,7 @@ function Quiz() {
           {option}
         </button>
       ))}
-
+      
       <div className="nav-buttons">
         <button
           className="prev-button"
