@@ -24,12 +24,14 @@ function Results({ userAnswers, questionBank, restartQuiz }) {
           {score === questionBank.length ? (
             <div>
               <h2>Berkeley Nerd!</h2>
-              <img src="/Berkeley-Trivia/erm.gif" />
+              <img src={`${import.meta.env.BASE_URL}erm.gif`} />
+
             </div>
           ) : (
             <div>
               <h2>Almost There!</h2>
-              <img src="/Berkeley-Trivia/long-tears.gif"/>
+              <img src={`${import.meta.env.BASE_URL}long-tears.gif`} />
+
             </div>
           )}
         </p>
